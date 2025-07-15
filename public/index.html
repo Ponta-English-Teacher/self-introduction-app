@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Introduction: Guided Chat Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Self-Introduction: Guided Chat Project</h1>
+    <p><strong>Class:</strong> BS1 2025 | <strong>Date:</strong> 2025-04-16</p>
+
+    <div id="taskContainer">
+      </div>
+  </div> <div id="dictionaryPopup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" onclick="closePopup()">&times;</span>
+      <h3>Dictionary Lookup</h3>
+      <h4 id="dictWord"></h4>
+      <p id="dictDefinition"></p>
+      <button id="playAudioBtn" style="display:none;">🔊 Play it</button>
+      <button onclick="confirmAddToGlossary()">➕ Add to Glossary</button>
+    </div>
+  </div>
+
+  <div class="container section"> <h2>My Glossary</h2>
+    <table class="glossary-table" id="glossary-table">
+      <thead>
+        <tr>
+          <th>Word/Phrase</th>
+          <th>Meaning</th>
+        </tr>
+      </thead>
+      <tbody>
+        </tbody>
+    </table>
+  </div>
+
+  <div class="container section translator-section">
+    <h2>How do you say it in English?</h2>
+    <p>Type a Japanese word or phrase below to find its natural English equivalent.</p>
+    <textarea id="jpInput" placeholder="例：お人よし" rows="3"></textarea>
+    <button id="translateJpBtn">Translate to English</button>
+    <div id="enOutput" class="chat-box">
+      <p>The English translation will appear here.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
